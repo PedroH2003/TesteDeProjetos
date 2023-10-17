@@ -11,16 +11,15 @@ conexao = mysql.connector.connect(
 
 cursor = conexao.cursor()
 
-"""
+
 #CREATE
-descricao = "chinelo"
-valor = 10.23
+descricao = "batata"
+valor = 53
 tabela = "vendas"
 
 comando = f'INSERT INTO {tabela} (descricao, valor) VALUES ("{descricao}", {valor})'
 cursor.execute(comando)
 conexao.commit() # edita o banco de dados
-"""
 
 """
 #READ
