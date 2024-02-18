@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="poov.projeto01cadastro.controller.Controller_TelaPrincipal">
+   <children>
+      <TableView fx:id="tabelaFilme" layoutX="13.0" layoutY="107.0" onMouseClicked="#filmeClicked" prefHeight="201.0" prefWidth="639.0">
+         <columns>
+            <TableColumn fx:id="nome" prefWidth="407.0" text="Nome" />
+            <TableColumn fx:id="ano" minWidth="0.0" prefWidth="77.0" text="Ano" />
+            <TableColumn fx:id="duracao" prefWidth="81.0" text="Duracao" />
+            <TableColumn fx:id="nota" prefWidth="73.0" text="Nota IMDB" />
+         </columns>
+      </TableView>
+      <Label layoutX="249.0" layoutY="22.0" text="TABELA DE FILMES">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonFilme" layoutX="513.0" layoutY="73.0" mnemonicParsing="false" onAction="#inserir_filme" text="INSERIR NOVO FILME">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="campoFilme" layoutX="173.0" layoutY="73.0" prefHeight="25.0" prefWidth="330.0" />
+      <Button fx:id="buttonVoltar" layoutX="13.0" layoutY="73.0" mnemonicParsing="false" onAction="#voltar_login" text="VOLTAR PARA O LOGIN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
