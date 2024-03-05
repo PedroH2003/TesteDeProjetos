@@ -23,7 +23,7 @@
         <!--
         O maven nãp possui um conector para a versão 8.0.34 do MySQL, seus conectores vão até a versão 8.0.33
         Alternativa: Usar outra versão de MySQL, mas por enquanto vou usar o PostgreSQL
-        OBS: descobri isso aqui: https://mvnrepository.com/artifact/mysql/mysql-connector-java
+        OBS: descobri essa informação aqui: https://mvnrepository.com/artifact/mysql/mysql-connector-java
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -31,6 +31,7 @@
         </dependency> 
 
       --> 
+
     
         <dependency>
           <groupId>org.seleniumhq.selenium</groupId>
