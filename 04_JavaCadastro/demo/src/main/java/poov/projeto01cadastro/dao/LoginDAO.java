@@ -79,7 +79,7 @@ public class LoginDAO {
         int num = psmt.executeUpdate();
         
         if(num > 0){
-            System.err.println("CADASTRO FEITO COM SUCESSO!!");
+            System.out.println("CADASTRO FEITO COM SUCESSO!!");
         }
         psmt.close();
     }
