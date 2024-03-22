@@ -46,5 +46,30 @@ public class Remedio {
 	
 	@Enumerated(EnumType.STRING)
 	private Laboratorio laboratorio;
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	
+	public String getLote() {
+		return lote;
+	}
+	
+	public int getQuantidade() {
+		return quantidade;
+	}
+	
+	public LocalDate getValidade() {
+		return validade;
+	}
+	
+	public Via getVia() {
+		return via;
+	}
+	
+	public Laboratorio getLaboratorio() {
+		return laboratorio;
+	}
 						
 }

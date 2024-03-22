@@ -17,7 +17,7 @@ public record DadosCadastroRemedio(
 		int quantidade,
 		@Future
 		LocalDate validade,
-		@NotBlank
+		@Enumerated
 		Laboratorio laboratorio
 		) {
 }
