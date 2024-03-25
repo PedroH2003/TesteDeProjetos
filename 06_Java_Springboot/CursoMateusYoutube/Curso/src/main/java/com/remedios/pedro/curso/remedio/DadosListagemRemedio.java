@@ -3,6 +3,7 @@ package com.remedios.pedro.curso.remedio;
 import java.time.LocalDate;
 
 public record DadosListagemRemedio(
+		Long id,
 		String nome, 
 		Via via, 
 		String lote, 
@@ -11,6 +12,6 @@ public record DadosListagemRemedio(
 		) {
 	
 	public DadosListagemRemedio(Remedio remedio) {
-		this(remedio.getNome(), remedio.getVia(), remedio.getLote(), remedio.getLaboratorio(), remedio.getValidade());
+		this(remedio.getId(),remedio.getNome(), remedio.getVia(), remedio.getLote(), remedio.getLaboratorio(), remedio.getValidade());
 	}
 }
