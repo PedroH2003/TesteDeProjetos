@@ -13,7 +13,7 @@ import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
+// import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Table(name = "Remedio")
@@ -21,7 +21,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
+// @NoArgsConstructor
 @EqualsAndHashCode(of = "id")
 public class Remedio {
 	public Remedio() {
@@ -34,6 +34,7 @@ public class Remedio {
 		this.quantidade = dados.quantidade();
 		this.validade = dados.validade();
 		this.laboratorio = dados.laboratorio();
+		this.ativo = true;
 	}
 
 	@Id 
@@ -50,6 +51,12 @@ public class Remedio {
 	@Enumerated(EnumType.STRING)
 	private Laboratorio laboratorio;
 	
+	
+	private Boolean ativo;
+	
+	public Boolean getAtivo() {
+		return ativo;
+	}
 	
 	public String getNome() {
 		return nome;
@@ -90,6 +97,14 @@ public class Remedio {
 		if(dados.laboratorio() != null) {
 			this.laboratorio = dados.laboratorio();
 		}
+		
+	}
+	public void inativar() {
+		this.ativo = false;
+		
+	}
+	public void reativar() {
+		this.ativo = true;
 		
 	}
 						
